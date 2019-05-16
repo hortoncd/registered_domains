@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "registered_domains"
+
+# Example Name.com domains query
+# Set the environment variables in the call below, and run the script.
+
+nc = RegisteredDomains::NameCom::Domains.new(ENV['NAME_COM_USER'],
+                                             ENV['NAME_COM_API_KEY'])
+puts nc.domains.inspect

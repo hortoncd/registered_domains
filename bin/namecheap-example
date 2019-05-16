@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "registered_domains"
+
+# Example Namecheap domains query
+# Set the environment variables in the call below, and run the script.
+
+nc = RegisteredDomains::Namecheap::Domains.new(ENV['NAMECHEAP_USER'],
+                                               ENV['NAMECHEAP_API_KEY'],
+                                               ENV['NAMECHEAP_API_USER'])
+puts nc.domains.inspect
