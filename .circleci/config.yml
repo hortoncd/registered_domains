@@ -11,6 +11,7 @@ jobs:
     - image: circleci/ruby:2.6
     steps:
     - checkout
+    - run: gem uninstall bundler && gem install bundler
     - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
     - restore_cache:
         keys:
