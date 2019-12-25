@@ -25,16 +25,16 @@ Currently this works for Name.com and Namecheap
 
 Name.com
 ```
-> nc = NameCom::Domains.new('user', 'apikey')
-> nc.domains
+nc = NameCom::Domains.new('user', 'apikey')
+nc.domains
 > ['fakedomain.com']
 ```
 
 Namecheap
 ```
-> nc = Namecheap::Domains.new('user', 'apikey', 'apiuser')
-> nc.domains
-> let(:mock_domain) { ['fakedomain.com'] }
+nc = Namecheap::Domains.new('user', 'apikey', 'apiuser')
+nc.domains
+> ['fakedomain.com']
 ```
 
 
