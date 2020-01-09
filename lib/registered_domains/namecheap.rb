@@ -11,7 +11,7 @@ module RegisteredDomains
       attr_reader :domains
 
       def initialize(user, api_key, api_user)
-        ip = ::HTTParty.get('https://www.icanhazip.com')
+        ip = ::HTTParty.get('https://ipv4.icanhazip.com')
         ip.success?
         @config = {
           client_ip: ip,
