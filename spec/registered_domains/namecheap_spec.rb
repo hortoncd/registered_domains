@@ -16,7 +16,7 @@ describe Namecheap::Domains do
   end
 
   before do
-    stub_request(:get, /www.icanhazip.com/).
+    stub_request(:get, /ipv4.icanhazip.com/).
       to_return(status: 200, body: mock_ip, headers: {})
     stub_request(:get, /api.namecheap.com/).
       to_return(status: 200, body: namecheap_fixtures.single_page, headers: {})
