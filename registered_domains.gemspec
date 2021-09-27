@@ -29,6 +29,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock", "~> 3.5.1"
   spec.add_dependency "httparty", "~> 0.17"
   spec.add_dependency "namecheap-api", "= 0.0.1"
-  spec.add_dependency "nokogiri", "~> 1.11.0"
+  spec.add_dependency "nokogiri", ">= 1.11", "< 1.13"
   spec.add_dependency "rexml", "~> 3.2.0"
 end
