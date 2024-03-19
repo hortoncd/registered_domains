@@ -4,7 +4,7 @@ PATH
     registered_domains (0.1.5)
       httparty (~> 0.21)
       namecheap-api (= 0.0.1)
-      nokogiri (>= 1.11, < 1.15)
+      nokogiri (>= 1.11, < 1.17)
       rexml (~> 3.2.0)
 
 GEM
@@ -30,7 +30,9 @@ GEM
     namecheap-api (0.0.1)
       nokogiri (~> 1.6)
       typhoeus (~> 0.6)
-    nokogiri (1.14.5-arm64-darwin)
+    nokogiri (1.16.3-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.3-x86_64-linux)
       racc (~> 1.4)
     public_suffix (5.0.4)
     racc (1.7.3)
@@ -64,6 +66,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bundler (> 1.17)
