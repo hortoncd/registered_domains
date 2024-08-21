@@ -30,5 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "httparty", "~> 0.21"
   spec.add_dependency "namecheap-api", "= 0.0.1"
   spec.add_dependency "nokogiri", ">= 1.11", "< 1.17"
-  spec.add_dependency "rexml", "~> 3.2.0"
+  spec.add_dependency "rexml", "~> 3.3.3"
 end

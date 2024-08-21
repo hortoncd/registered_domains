@@ -5,7 +5,7 @@ PATH
       httparty (~> 0.21)
       namecheap-api (= 0.0.1)
       nokogiri (>= 1.11, < 1.17)
-      rexml (~> 3.2.0)
+      rexml (~> 3.3.3)
 
 GEM
   remote: https://rubygems.org/
@@ -37,8 +37,8 @@ GEM
     public_suffix (5.0.4)
     racc (1.7.3)
     rake (13.1.0)
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
+    rexml (3.3.5)
+      strscan
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
